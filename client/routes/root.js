@@ -4,15 +4,13 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 // Component
 import App from './../components/App';
-import ContainerPhone from './../containers/Phone';
-import ContainerBasket from './../containers/Basket';
+import Admin from './../components/Admin';
 
 
 const RootRouter = () => (
     <BrowserRouter>
         <Switch>
-            <Route path='/basket' component={ContainerBasket} />
-            <Route path='/phones/:id' component={ContainerPhone} />
+            <Route path='/admin' component={Admin} />
             <Route path='/' component={App} />
         </Switch>
     </BrowserRouter>
