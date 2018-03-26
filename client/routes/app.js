@@ -3,13 +3,13 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 // Component
-import ContainerPhones from '../containers/Phones';
+import Section from '../components/Section';
 
 
 const AppRouter = () => (
         <Switch>
-            <Route path='/categories/:catId' component={ContainerPhones} />
-            <Route path='/' component={ContainerPhones} />
+            <Route path='/categories/:catId' component={Section} />
+            <Route path='/' component={Section} />
         </Switch>
 )
 

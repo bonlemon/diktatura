@@ -11,14 +11,14 @@ import { createLogger } from 'redux-logger';
 // Routes
 import RootRouter from './routes/root';
 
-// reducer
-import reducer from './reducers'
+// Reducer
+import reducer from './reducers';
 
 
 // compose middlewares for redux devtools
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-// middleware: create log when action was dispatched
+// middleware: create log when action was dispatcheds
 const logger = createLogger();
 
 
