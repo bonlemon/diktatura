@@ -10,7 +10,7 @@ import Admin from './../components/Admin';
 const RootRouter = () => (
     <BrowserRouter>
         <Switch>
-            <Route path='/admin' component={Admin} />
+            {/* <Route path='/admin' component={Admin} /> */}
             <Route path='/' component={App} />
         </Switch>
     </BrowserRouter>

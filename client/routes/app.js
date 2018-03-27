@@ -6,11 +6,11 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Section from '../components/Section';
 
 
-const AppRouter = () => (
+const SectionRouter = () => (
         <Switch>
             <Route path='/categories/:catId' component={Section} />
             <Route path='/' component={Section} />
         </Switch>
 )
 
-export default AppRouter;
+export default SectionRouter;

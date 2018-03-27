@@ -4,7 +4,7 @@ import Sidebar from '../Sidebar';
 
 import AppRouter from '../../routes/app';
 
-import './App.scss';
+import './Admin.scss';
 
 
 class App extends React.Component {

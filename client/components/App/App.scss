@@ -1,0 +1,27 @@
+body {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.wrapper{
+    display:            flex;
+    flex-direction:     column;
+}
+
+.footer {
+    flex: 0 0 auto;
+    
+    &__links {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__social-img{
+        padding: 8px;
+    }
+
+
+    &__copyright{
+        padding:16px 0;
+        text-align: center;
+    }
+}

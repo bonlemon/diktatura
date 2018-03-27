@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Section from '../Sidebar';
+import Sidebar from '../Sidebar';
 
 import './Section.scss';
 
@@ -25,7 +25,7 @@ class Section extends React.Component {
                                 <Sidebar />
                             </div>
                             <div className="col-md-9">
-                                <SectionRouter />
+                                {/* <SectionRouter /> */}
                             </div>
                         </div>
                     </div>
