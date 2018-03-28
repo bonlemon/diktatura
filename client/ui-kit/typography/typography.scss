@@ -1,0 +1,16 @@
+@import '../colors/colors.scss';
+
+@mixin font-base {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: $gray;
+}
+
+@mixin font-menu {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: $gray;
+    letter-spacing: 1px;
+}

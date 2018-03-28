@@ -1,10 +1,17 @@
+// Lybrary's
 import React from 'react';
 
-import AppRouter from '../../routes/app';
+// Components
+import AppBar from '../AppBar';
 
+// Images
+import logo from '../../images/logo.png';
+
+// Styles
 import './App.scss';
 
-import logo from '../../images/logo.png';
+// Routes
+import AppRouter from '../../routes/app';
 
 
 class App extends React.Component {
@@ -12,18 +19,38 @@ class App extends React.Component {
         return (
             <div className="wrapper">
                 <header className="header">
+                    <AppBar>
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-4">
+                                    <div className="header__contact">
+                                        +7 (999) 717 09 71
+                                    </div>
+                                </div>
+                                <div className="col">
+                                    <div className="header__logo">
+                                        <img src={logo} alt="Logo" />
+                                    </div>
+                                </div>
+                                <div className="col">
+                                    <div className="header__icons">
+                                        <i class="fa fa-user fa-lg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </AppBar>
+                </header>
+                <section className="content">
                     <div className="container">
                         <div className="row">
-                            <div className="col-4 col-md-4">
-                                <img src={logo} alt="Logo" />
-                            </div>
-                            <div className="col"></div>
                             <div className="col">
-                                <i class="fa fa-user fa-lg"></i>
+                                efwe
                             </div>
                         </div>
                     </div>
-                </header>
+                </section>
+
                 {/* <AppRouter /> */}
                 <section className="content">
                     <div className="container">

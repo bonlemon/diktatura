@@ -1,0 +1,42 @@
+@import "~library/ui-kit/main.scss";
+
+
+@mixin typo-tab-label {
+    @include typo-base;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: $black;
+}
+
+
+.b-tab {
+
+    position: relative;
+    display: inline-block;
+    height: 46px;
+    text-decoration: none;
+
+
+    &__label {
+        @include typo-tab-label;
+    }
+
+    &__slide {
+        position: absolute;
+        display: block;
+        bottom: 0;
+        width: 100%;
+        height: 5px;
+        background: $red--rich;
+        opacity: 0;
+    }
+
+    &--active{
+
+        .b-tab__slide {
+            opacity: 1;
+        }
+    }
+
+}
