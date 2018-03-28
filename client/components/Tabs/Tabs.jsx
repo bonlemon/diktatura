@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 
 // Components
-import Tab from './tab.jsx';
+import Tab from './Tab.jsx';
 
 // Styles
-import './tabs.scss';
+import './Tabs.scss';
 
 
 
@@ -28,7 +28,7 @@ export default class Tabs extends React.Component {
     getComponentClassNames() {
         const {className} = this.props;
 
-        classNames(
+        return classNames(
             className ? className : '',
             'b-tabs'
         )
@@ -44,7 +44,13 @@ export default class Tabs extends React.Component {
                 {
                     items.map((item, i) => {
                         return <li className="b-tabs__item" key={i} >
-                                    <Tab id={item.id} className={item.className} label={item.label} url={item.url} replace={replace} />
+                                    <Tab
+                                        id={item.id}
+                                        className={item.className}
+                                        label={item.label}
+                                        url={item.url}
+                                        replace={replace}
+                                    />
                                 </li>
                     })
                 }

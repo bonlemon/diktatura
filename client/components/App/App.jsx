@@ -3,6 +3,7 @@ import React from 'react';
 
 // Components
 import AppBar from '../AppBar';
+import Tabs from '../Tabs';
 
 // Images
 import logo from '../../images/logo.png';
@@ -15,7 +16,25 @@ import AppRouter from '../../routes/app';
 
 
 class App extends React.Component {
+
     render() {
+        const items = [
+            {
+                id:         "main-page",
+                label:      "Основная информация",
+                url:        "/",
+            },
+            {
+                id:         "shop-page",
+                label:      "Магазин",
+                url:        "/shop",
+            },
+            {
+                id:         "contact-page",
+                label:      "Контакты",
+                url:        "/contacts",
+            }
+        ];
         return (
             <div className="wrapper">
                 <header className="header">
@@ -45,7 +64,7 @@ class App extends React.Component {
                     <div className="container">
                         <div className="row">
                             <div className="col">
-                                efwe
+                                <Tabs items={items}/>
                             </div>
                         </div>
                     </div>

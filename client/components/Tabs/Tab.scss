@@ -1,9 +1,9 @@
-@import "~library/ui-kit/main.scss";
+@import "../../ui-kit/main.scss";
 
 
-@mixin typo-tab-label {
-    @include typo-base;
-    font-weight: 600;
+@mixin font-tab-label {
+    @include font-base;
+    font-weight: 400;
     font-size: 16px;
     letter-spacing: 1px;
     color: $black;
@@ -13,22 +13,35 @@
 .b-tab {
 
     position: relative;
+
     display: inline-block;
     height: 46px;
+    padding: 16px 8px;
+    
     text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+
+        background: $gray--middle;
+        border-radius: 4px;
+    }
 
 
     &__label {
-        @include typo-tab-label;
+        @include font-tab-label;
     }
 
     &__slide {
         position: absolute;
+        bottom: 8px;
+
         display: block;
-        bottom: 0;
+        
         width: 100%;
-        height: 5px;
-        background: $red--rich;
+        height: 4px;
+        
+        background: $gray--middle;
         opacity: 0;
     }
 

@@ -14,6 +14,9 @@ import RootRouter from './routes/root';
 // Reducer
 import reducer from './reducers';
 
+// Styles
+// import './ui-kit/main'
+
 
 // compose middlewares for redux devtools
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

@@ -1,54 +1,66 @@
 // Lybrary's
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import classNames from 'classnames';
 
-// Components
-import Tab from './tab.jsx';
-
 // Styles
-import './tabs.scss';
+import './Tab.scss';
 
 
 
-export default class Tabs extends React.Component {
-
+export default class Tab extends React.Component {
+    
     static propTypes = {
-        className:  PropTypes.string,
-        items:      PropTypes.array.isRequired,
-        replace:    PropTypes.bool
+        id: PropTypes.string,
+        className: PropTypes.string,
+        label: PropTypes.string.isRequired,
+        url: PropTypes.string.isRequired
     }
 
     static defaultProps = {
-        items:      [],
-        replace:    false
-    };    
-
-    getComponentClassNames() {
-        const {className} = this.props;
-
-        classNames(
-            className ? className : '',
-            'b-tabs'
-        )
+        label: '',
+        url: '/app'
     }
-    render() {
+
+    getComponentClassNames(){
         const {
-            items,
-            replace
+            className,
+            type
         } = this.props;
 
-        return (
-            <ul className={this.getComponentClassNames()}>
-                {
-                    items.map((item, i) => {
-                        return <li className="b-tabs__item" key={i} >
-                                    <Tab id={item.id} className={item.className} label={item.label} url={item.url} replace={replace} />
-                                </li>
-                    })
-                }
-            </ul>
+        return { 
+            component: classNames(
+                className ? className : '',
+                'b-tab'
+            )
+        } 
+    }
+    render(){
+        const classes = this.getComponentClassNames();
+
+        const {
+            id,
+            label,
+            url,
+            replace,
+            className
+        } = this.props;
+
+        return(
+            <NavLink
+                id={id}
+                exact
+                to={ url }
+                className={ classes.component }
+                activeClassName="b-tab--active"
+                replace={replace}
+            >
+                <span className={`b-tab__label ${className}`}>
+                    { label }
+                </span>
+                <div className="b-tab__slide"></div>
+            </NavLink>
         );
     }
 }
