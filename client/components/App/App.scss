@@ -30,13 +30,52 @@ body {
 
 .footer {
     flex: 0 0 auto;
+
+    &__subscribe{
+        display: flex;
+        justify-content: space-around;
+
+        button {
+            background: #fff;
+            font-weight: normal;
+            text-align: center;
+            vertical-align: middle;
+            touch-action: manipulation;
+            cursor: pointer;
+            border: 1px solid #c6cad1;
+            white-space: nowrap;
+            padding: 6px 20px;
+            line-height: 1.25;
+            border-radius: 2px;
+            
+            &:hover {
+                color: #000;
+                background: #d9dce0;
+            }
+        }
+
+    }
+
+    &__input {
+        height: 34px;
+        padding: 6px 12px;
+
+        font-size: 16px;
+        line-height: 1.25;
+
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        transition: border-color ease-in-out 0.15s,
+                    box-shadow ease-in-out 0.15s;
+    }
     
     &__links {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        width: 100%;
     }
 
-    &__social{
+    &__social {
         display: flex;
         justify-content: center;
 
@@ -50,7 +89,11 @@ body {
 
 
     &__copyright{
+        
+        display: flex;
+        justify-content: center;
+        
+        width: 100%;
         padding:16px 0;
-        text-align: center;
     }
 }

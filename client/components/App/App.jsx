@@ -88,17 +88,21 @@ class App extends React.Component {
                                     <div className="row">
                                         <div className="col">
                                             <form className="footer__subscribe">
-                                                <input type="text"/>
+                                                <input
+                                                    className="footer__input"
+                                                    type="text"
+                                                    placeholder="email"
+                                                />
                                                 <button>Подписаться</button>
                                             </form>
                                         </div>
                                         <div className="w-100 d-block d-md-none"></div>
                                         <div className="col">
-                                            <div className="footer_social">
+                                            <div className="footer__social">
                                                 <i className="fa fa-facebook-f fa-lg footer__social-img"></i>
                                                 <i className="fa fa-vk fa-lg footer__social-img"></i>
                                                 <i className="fa fa-instagram fa-lg footer__social-img"></i>
-                                                <i className="fa fa-telegram-plane fa-lg footer__social-img"></i>
+                                                <i className="fa fa-telegram fa-lg footer__social-img"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -113,7 +117,7 @@ class App extends React.Component {
                             <div className="w-100"></div>
                             <div className="col">
                                 <div class="footer__copyright">
-                                    © Copyright 2014 FreebiesXpress.com
+                                    © Copyright 2018 diktature.com
                                 </div>
                             </div>
                         </div>
