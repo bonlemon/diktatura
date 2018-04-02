@@ -13,22 +13,22 @@ import './App.scss';
 
 // Routes
 import AppRouter from '../../routes/app';
-
+import Footer from '../Footer';
 
 class App extends React.Component {
 
     render() {
         const items = [
             {
-                id:         "main-page",
-                label:      "Основная информация",
+                id:         "main",
+                label:      "Новинки",
                 url:        "/",
             },
-            {
-                id:         "shop-page",
-                label:      "Магазин",
-                url:        "/shop",
-            },
+            // {
+            //     id:         "shop-page",
+            //     label:      "Магазин",
+            //     url:        "/shop",
+            // },
             {
                 id:         "contact-page",
                 label:      "Контакты",
@@ -37,6 +37,7 @@ class App extends React.Component {
         ];
         return (
             <div className="wrapper">
+                <div className="co">
                 <header className="header">
                     <AppBar>
                         <div className="container">
@@ -69,8 +70,7 @@ class App extends React.Component {
                         </div>
                     </div>
                 </section>
-
-                {/* <AppRouter /> */}
+                <AppRouter />
                 <section className="content">
                     <div className="container">
                         <div className="row">
@@ -80,48 +80,8 @@ class App extends React.Component {
                         </div>
                     </div>
                 </section>
-                <footer className="footer">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col">
-                                <div className="footer__links">
-                                    <div className="row">
-                                        <div className="col col-md-6">
-                                            <form className="footer__subscribe">
-                                                <input
-                                                    className="footer__input"
-                                                    type="text"
-                                                    placeholder="email"
-                                                />
-                                                <button>Подписаться</button>
-                                            </form>
-                                        </div>
-                                        <div className="w-100 d-block d-md-none"></div>
-                                        <div className="col col-md-6">
-                                            <div className="footer__social">
-                                                <i className="fa fa-facebook-f fa-lg footer__social-img"></i>
-                                                <i className="fa fa-vk fa-lg footer__social-img"></i>
-                                                <i className="fa fa-instagram fa-lg footer__social-img"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="w-100"></div>
-                            <div className="col">
-                                <div className="footer__info">
-                                    
-                                </div>
-                            </div>
-                            <div className="w-100"></div>
-                            <div className="col">
-                                <div className="footer__copyright">
-                                    © Copyright 2018 diktature.com
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
+                </div>
+                <Footer />
             </div>
         )
     }

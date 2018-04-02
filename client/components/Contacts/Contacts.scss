@@ -1,0 +1,34 @@
+.shop{
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+
+    &__title,
+    &__address,
+    &__work-time,
+    &__phone{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 8px;
+    }
+
+    // &__address{
+    //     display: flex;
+
+    //     padding: 8px;
+    // }
+
+    // &__work-time{
+    //     display: flex;
+
+    //     padding: 8px;
+    // }
+
+    // &__phone{
+    //     display: flex;
+
+    //     padding: 8px;
+    // }
+}
