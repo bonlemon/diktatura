@@ -70,3 +70,15 @@
         padding:16px 0;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .footer {
+        &__subscribe{
+            flex-wrap: nowrap
+        }
+
+        &__social {
+            justify-content: flex-end;
+        }
+    }    
+}

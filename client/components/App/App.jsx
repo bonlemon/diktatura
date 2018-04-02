@@ -20,9 +20,9 @@ class App extends React.Component {
     render() {
         const items = [
             {
-                id:         "main",
-                label:      "Новинки",
-                url:        "/",
+                id: "main",
+                label: "Новинки",
+                url: "/",
             },
             // {
             //     id:         "shop-page",
@@ -30,56 +30,47 @@ class App extends React.Component {
             //     url:        "/shop",
             // },
             {
-                id:         "contact-page",
-                label:      "Контакты",
-                url:        "/contacts",
+                id: "contact-page",
+                label: "Контакты",
+                url: "/contacts",
             }
         ];
         return (
             <div className="wrapper">
                 <div className="co">
-                <header className="header">
-                    <AppBar>
+                    <header className="header">
+                        <AppBar>
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col-3 d-none d-md-block">
+                                        <div className="header__contact">
+                                            +7 (999) 717 09 71
+                                    </div>
+                                    </div>
+                                    <div className="col-md-6">
+                                        <div className="header__logo">
+                                            <img src={logo} alt="Logo" />
+                                        </div>
+                                    </div>
+                                    <div className="col-3 d-none d-md-block">
+                                        <div className="header__icons">
+                                            <i className="fa fa-user fa-lg"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </AppBar>
+                    </header>
+                    <section className="content">
                         <div className="container">
                             <div className="row">
-                                <div className="col-3 d-none d-md-block">
-                                    <div className="header__contact">
-                                        +7 (999) 717 09 71
-                                    </div>
-                                </div>
-                                <div className="col-md-6">
-                                    <div className="header__logo">
-                                        <img src={logo} alt="Logo" />
-                                    </div>
-                                </div>
-                                <div className="col-3 d-none d-md-block">
-                                    <div className="header__icons">
-                                        <i className="fa fa-user fa-lg"></i>
-                                    </div>
+                                <div className="col">
+                                    <Tabs items={items} />
                                 </div>
                             </div>
                         </div>
-                    </AppBar>
-                </header>
-                <section className="content">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col">
-                                <Tabs items={items}/>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <AppRouter />
-                <section className="content">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col">
-                                efwe
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                    </section>
+                    <AppRouter />
                 </div>
                 <Footer />
             </div>

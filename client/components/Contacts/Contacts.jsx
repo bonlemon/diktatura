@@ -16,7 +16,7 @@ class Section extends React.Component {
                                 Диктатура - тц "Ролл Холл"
                             </div>
                             <div className="shop__address">
-                                115191, Москва, Холодильный пер., д.3, ТЦ "Ролл Холл", пав.75
+                                115191, Москва, Холодильный пер., д.3,<br /> ТЦ "Ролл Холл", пав.75
                             </div>
                             <div className="shop__work-time">
                                 Ежедневно: с 10:00 до 21:00
