@@ -41,7 +41,7 @@ class App extends React.Component {
                     <AppBar>
                         <div className="container">
                             <div className="row">
-                                <div className="col-4 d-none d-md-block">
+                                <div className="col-3 d-none d-md-block">
                                     <div className="header__contact">
                                         +7 (999) 717 09 71
                                     </div>
@@ -51,9 +51,9 @@ class App extends React.Component {
                                         <img src={logo} alt="Logo" />
                                     </div>
                                 </div>
-                                <div className="col d-none d-md-block">
+                                <div className="col-3 d-none d-md-block">
                                     <div className="header__icons">
-                                        <i class="fa fa-user fa-lg"></i>
+                                        <i className="fa fa-user fa-lg"></i>
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +86,7 @@ class App extends React.Component {
                             <div className="col">
                                 <div className="footer__links">
                                     <div className="row">
-                                        <div className="col">
+                                        <div className="col col-md-6">
                                             <form className="footer__subscribe">
                                                 <input
                                                     className="footer__input"
@@ -97,12 +97,11 @@ class App extends React.Component {
                                             </form>
                                         </div>
                                         <div className="w-100 d-block d-md-none"></div>
-                                        <div className="col">
+                                        <div className="col col-md-6">
                                             <div className="footer__social">
                                                 <i className="fa fa-facebook-f fa-lg footer__social-img"></i>
                                                 <i className="fa fa-vk fa-lg footer__social-img"></i>
                                                 <i className="fa fa-instagram fa-lg footer__social-img"></i>
-                                                <i className="fa fa-telegram fa-lg footer__social-img"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -116,7 +115,7 @@ class App extends React.Component {
                             </div>
                             <div className="w-100"></div>
                             <div className="col">
-                                <div class="footer__copyright">
+                                <div className="footer__copyright">
                                     © Copyright 2018 diktature.com
                                 </div>
                             </div>
