@@ -37,15 +37,14 @@ class App extends React.Component {
         ];
         return (
             <div className="wrapper">
-                <div className="co">
+                <div className="content-wrapper">
                     <header className="header">
                         <AppBar>
                             <div className="container">
                                 <div className="row">
                                     <div className="col-3 d-none d-md-block">
                                         <div className="header__contact">
-                                            +7 (999) 717 09 71
-                                    </div>
+                                        </div>
                                     </div>
                                     <div className="col-md-6">
                                         <div className="header__logo">
