@@ -1,5 +1,6 @@
 // Lybrary's
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Components
 import AppBar from '../AppBar';
@@ -48,7 +49,9 @@ class App extends React.Component {
                                     </div>
                                     <div className="col-md-6">
                                         <div className="header__logo">
-                                            <img src={logo} alt="Logo" />
+                                            <Link to="/">
+                                                <img src={logo} alt="Logo" />
+                                            </Link>
                                         </div>
                                     </div>
                                     <div className="col-3 d-none d-md-block">
