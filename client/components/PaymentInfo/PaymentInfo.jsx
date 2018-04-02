@@ -1,26 +1,31 @@
 import React from 'react';
 
-import './Contacts.scss';
+import './PaymentInfo.scss';
 
 
-class Contacts extends React.Component {
+class PaymentInfo extends React.Component {
     render() {
         return (
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <div className="shop">
-                            <div className="shop__title">
+                        <div className="paymant">
+                            <div>
                                 Диктатура - тц "Ролл Холл"
                             </div>
                             <div className="shop__address">
-                                115191, Москва, Холодильный пер., д.3,<br /> ТЦ "Ролл Холл", пав.75
+                                Vы принимаем:
+                                <ul>
+                                    <li>Дебетовые/Rредитный карты  (Visa, Master Card, Maestro и др.)</li>
+                                    <li>QIWI</li>
+                                    <li>Яндекс.Деньги</li>
+                                </ul>
                             </div>
                             <div className="shop__work-time">
-                                Ежедневно: с 10:00 до 21:00
+                                Оплата заказа наличными возможна при самовывозе из магазина и при курьерской доставке.
                             </div>
                             <div className="shop__phone">
-                                + 7 (999)  809-68-11
+                                ОБРАЩАЕМ ВАШЕ ВНИМАНИЕ, ЧТО ЗАКАЗЫ В РЕГИОНЫ ОТПРАВЛЯЮТСЯ СТРОГО ПО ПОЛНОЙ ПРЕДОПЛАТЕ.
                             </div>
                         </div>
                     </div>
@@ -47,4 +52,4 @@ class Contacts extends React.Component {
     }
 }
 
-export default Contacts;
+export default PaymentInfo;

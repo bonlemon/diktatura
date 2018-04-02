@@ -3,20 +3,20 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Components
-import AppBar from '../AppBar';
+import AuthBar from '../AuthBar';
 import Tabs from '../Tabs';
 
 // Images
 import logo from '../../images/logo.png';
 
 // Styles
-import './App.scss';
+import './Auth.scss';
 
 // Routes
-import AppRouter from '../../routes/app';
+import AuthRouter from '../../routes/Auth';
 import Footer from '../Footer';
 
-class App extends React.Component {
+class Auth extends React.Component {
 
     render() {
         const items = [
@@ -42,10 +42,10 @@ class App extends React.Component {
             }
         ];
         return (
-            <div className="wrapper">
-                <div className="content-wrapper">
+            <div className="wrAuther">
+                <div className="content-wrAuther">
                     <header className="header">
-                        <AppBar>
+                        <AuthBar>
                             <div className="container">
                                 <div className="row">
                                     <div className="col-3 d-none d-md-block">
@@ -66,7 +66,7 @@ class App extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                        </AppBar>
+                        </AuthBar>
                     </header>
                     <section className="content">
                         <div className="container">
@@ -77,7 +77,7 @@ class App extends React.Component {
                             </div>
                         </div>
                     </section>
-                    <AppRouter />
+                    <AuthRouter />
                 </div>
                 <Footer />
             </div>
@@ -85,4 +85,4 @@ class App extends React.Component {
     }
 }
 
-export default App;
+export default Auth;

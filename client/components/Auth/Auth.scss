@@ -1,0 +1,41 @@
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.header {
+    &__contact,
+    &__logo,
+    &__icons{
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+    }
+
+    &__contact{
+        justify-content: flex-start;
+    }
+    &__logo{
+        justify-content: center;
+    }
+    &__icons{
+        justify-content: flex-end;
+    }
+}
+
+
+.wrapper{
+    display:            flex;
+    flex-direction:     column;
+    height:             100%;
+}
+
+.content-wrapper {
+    flex: 1 0 auto;
+}
