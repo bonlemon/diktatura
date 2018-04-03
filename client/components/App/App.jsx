@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 
 // Components
 import AppBar from '../AppBar';
-import Tabs from '../Tabs';
+// import Tabs from '../Tabs';
+import Navbar from '../Navbar';
 
 // Images
 import logo from '../../images/logo.png';
@@ -69,13 +70,7 @@ class App extends React.Component {
                         </AppBar>
                     </header>
                     <section className="content">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col">
-                                    <Tabs items={items} />
-                                </div>
-                            </div>
-                        </div>
+                        <Navbar items={items} />
                     </section>
                     <AppRouter />
                 </div>

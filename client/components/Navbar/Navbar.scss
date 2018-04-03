@@ -1,0 +1,46 @@
+@import "../../ui-kit/main.scss";
+
+@mixin font-tab-label {
+    @include font-base;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: $black;
+}
+
+.b-navbar {
+
+    position: relative;
+
+    display: flex;
+    justify-content: space-around;
+    
+    width: 100%;
+    
+    background: #5A394E;
+    
+    &__link {
+        @include font-tab-label;
+        display: inline-flex;
+
+        padding: 16px;
+        
+        // Эффект при наведении и отвендении курсора на таб
+        // Или по отделности на :hover и :not(:hover)
+        transition: 1s;
+
+        color: #fff;
+        text-decoration: none;
+        
+        &--active{
+            background: rgba(0,0,0, 0.3);
+        }
+
+        &:hover {
+            background: rgba(0,0,0, 0.3);
+            color: #fff;
+            text-transform: none;
+            text-decoration: none;
+        }
+    }
+}

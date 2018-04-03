@@ -21,14 +21,12 @@
     text-decoration: none;
     
     &:hover {
-        padding: 8px;
         text-decoration: none;
 
-        background: $gray--middle;
-        border-radius: 4px;
-
         .b-tab__slide {
-            opacity: 0;
+            width: 100%;
+            
+            opacity: 1;
         }
     }
 
@@ -45,18 +43,27 @@
 
         display: block;
         
-        width: 100%;
+        width: 0;
         height: 4px;
         
-        background: $gray--middle;
+        background: $gray--middle; 
+        background: #5A394E;
         opacity: 0;
     }
 
     &--active{
 
         .b-tab__slide {
+            width: 100%;
+            
             opacity: 1;
         }
+    }
+
+    // Эффект при наведении и отвендении курсора на таб
+    // Или по отделности на :hover и :not(:hover)
+    .b-tab__slide {
+        transition: 1.5s;
     }
 
 }
