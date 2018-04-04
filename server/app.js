@@ -15,6 +15,6 @@ app.use(cors({origin: '*'}));
 
 app.use(express.static('production'))
 
-const server = app.listen(serverPort, () => {
+const server = app.listen(process.env.PORT || serverPort, () => {
     console.log(`Server is up and running on port: ${serverPort}`)
 })
