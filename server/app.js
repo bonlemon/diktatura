@@ -13,6 +13,8 @@ app.use(bodyParser.json());
 // it needs for cors
 app.use(cors({origin: '*'}));
 
+app.use(express.static('production'))
+
 const server = app.listen(serverPort, () => {
     console.log(`Server is up and running on port: ${serverPort}`)
 })
