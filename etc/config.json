@@ -1,6 +1,6 @@
 {
-    "apiPrefix":        "http://localhost:8077",
-    "serverPort":       "8077",
+    "apiPrefix":        "http://localhost:5000",
+    "serverPort":       "5000",
     "clientPort":       "8089",
     
     "db": {
