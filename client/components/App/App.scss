@@ -17,6 +17,9 @@ body {
         display: flex;
         align-items: center;
     }
+    &__menu{
+        display: none;
+    }
 
     &__contact{
         justify-content: flex-start;
@@ -38,4 +41,12 @@ body {
 
 .content-wrapper {
     flex: 1 0 auto;
+}
+
+@media screen and (max-width: 768px){
+    .header {
+        &__menu{
+            display: block;
+        }
+    }
 }

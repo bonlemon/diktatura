@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import AppBar from '../AppBar';
 // import Tabs from '../Tabs';
 import Navbar from '../Navbar';
+import NavbarButton from '../NavbarButton';
+// import Menu from '../Menu';
 
 // Images
 import logo from '../../images/logo.png';
@@ -49,8 +51,9 @@ class App extends React.Component {
                         <AppBar>
                             <div className="container">
                                 <div className="row">
-                                    <div className="col-3 d-none d-md-block">
-                                        <div className="header__contact">
+                                    <div className="col-3">
+                                        <div className="header__menu">
+                                            <NavbarButton/>
                                         </div>
                                     </div>
                                     <div className="col-md-6">
@@ -70,6 +73,7 @@ class App extends React.Component {
                         </AppBar>
                     </header>
                     <section className="content">
+                        {/* <Menu items={items} /> */}
                         <Navbar items={items} />
                     </section>
                     <AppRouter />
