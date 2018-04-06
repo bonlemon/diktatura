@@ -11,16 +11,32 @@ import './NavbarButton.scss';
 
 export default class NavbarButton extends React.Component {
 
-    onCLick = () => {
-        this.setState(({
+    constructor(props){
+        super(props);
+        this.state = {
+            isOpend: false
+        }
+    }
+
+    handlerOnCLick = () => {
+        this.setState({
             isOpend: !this.state.isOpend
-        }))
+        })
+    }
+
+    getComponentClassNames() {
+        const {isOpend} = this.state;
+
+        return classNames(
+            isOpend ? 'navbar-button--clicked' : null,
+            'navbar-button'
+        )
     }
 
     render() {
 
         return (
-            <div className="icon" onClick={this.onCLick}>
+            <div className={this.getComponentClassNames()} onClick={this.handlerOnCLick}>
                 <span></span>
                 <span></span>
                 <span></span>

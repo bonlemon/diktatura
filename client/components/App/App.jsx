@@ -56,7 +56,7 @@ class App extends React.Component {
                                             <NavbarButton/>
                                         </div>
                                     </div>
-                                    <div className="col-md-6">
+                                    <div className="col-6">
                                         <div className="header__logo">
                                             <Link to="/">
                                                 <img src={logo} alt="Logo" />
